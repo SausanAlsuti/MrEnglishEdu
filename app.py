@@ -22,5 +22,9 @@ def grammar():
 def quizzes():
     return render_template('quizzes.html')
 
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template('500.html'), 500
+
 if __name__ == '__main__':
     app.run(debug=True)
