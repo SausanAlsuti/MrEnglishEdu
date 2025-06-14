@@ -1,24 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Writing - MrEnglishEdu</title>
-  <link rel="stylesheet" href="/static/style.css" />
-</head>
-<body>
-  <h1>MrEnglishEdu - Writing</h1>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/courses">Courses</a>
-    <a href="/writing">Writing</a>
-    <a href="/grammar">Grammar</a>
-    <a href="/quizzes">Quizzes</a>
-  </nav>
-  <div class="container">
-    <h2>Practice Writing</h2>
-    <p>Write essays, emails, and reports here. Improve with guided prompts.</p>
-    <textarea rows="10" cols="80" placeholder="Start writing..."></textarea>
-    <br><br>
-    <button>Submit</button>
+{% extends "base.html" %}
+
+{% block title %}Writing - MrEnglishEdu{% endblock %}
+
+{% block content %}
+<section class="writing-section">
+  <div class="container main-content">
+    <div class="hero">
+      <h2>Improve Your Writing</h2>
+      <p>Practice writing emails, essays, and creative stories.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>Email Writing</h3>
+        <p>Practice writing formal and informal emails for real-life situations.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Essay Writing</h3>
+        <p>Learn to plan, organize, and write compelling academic essays.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Storytelling</h3>
+        <p>Boost creativity with descriptive and narrative writing exercises.</p>
+      </div>
+    </div>
   </div>
-</body>
-</html>
+</section>
+{% endblock %}

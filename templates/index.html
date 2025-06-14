@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MrEnglishEdu - Learn English Effectively</title>
-  <link rel="stylesheet" href="/static/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+{% block title %}Home - MrEnglishEdu{% endblock %}
 
-<body>
-
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">MrEnglishEdu</h1>
-      <nav class="nav">
-        <button id="menu-toggle" class="menu-btn">☰</button>
-        <a href="/templates/index.html">Home</a>
-        <a href="/templates/courses.html">Courses</a>
-        <a href="/templates/writing.html">Writing</a>
-        <a href="/templates/grammar.html">Grammar</a>
-        <a href="/templates/quizzes.html">Quizzes</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main-content container">
-
+{% block content %}
     <section class="hero">
       <h2>Welcome to Mr.English Education Platform!</h2>
       <p>Empowering students to master English through engaging lessons, writing practice, grammar exercises, and quizzes.</p>
@@ -48,14 +23,4 @@
         <p>Test your knowledge with auto-graded quizzes and track your progress.</p>
       </div>
     </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 MrEnglishEdu by Sausan Alsuti. All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="/static/script.js"></script>
-</body>
-</html>
+{% endblock %}

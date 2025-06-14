@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Courses - MrEnglishEdu</title>
-  <link rel="stylesheet" href="/static/style.css" />
-</head>
-<body>
-  <h1>MrEnglishEdu - Courses</h1>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/courses">Courses</a>
-    <a href="/writing">Writing</a>
-    <a href="/grammar">Grammar</a>
-    <a href="/quizzes">Quizzes</a>
-  </nav>
-  <div class="container">
-    <h2>Available Courses</h2>
-    <ul>
-      <li>Beginner Reading & Listening</li>
-      <li>Academic Writing</li>
-      <li>Email Writing for Professionals</li>
-      <li>Vocabulary & Context</li>
-      <li>Grammar Deep Dive</li>
-    </ul>
+{% extends "base.html" %}
+
+{% block title %}Courses - MrEnglishEdu{% endblock %}
+
+{% block content %}
+<section class="courses-section">
+  <div class="container main-content">
+    <div class="hero">
+      <h2>Available Courses</h2>
+      <p>Explore reading, writing, grammar, and vocabulary for different levels.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>Beginner</h3>
+        <p>Start learning the basics of English with simple texts and vocabulary.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Intermediate</h3>
+        <p>Practice sentence structure, common grammar, and writing paragraphs.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Advanced</h3>
+        <p>Enhance essay writing, academic reading, and professional grammar use.</p>
+      </div>
+    </div>
   </div>
-</body>
-</html>
+</section>
+{% endblock %}

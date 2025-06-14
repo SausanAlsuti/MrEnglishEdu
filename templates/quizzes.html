@@ -1,33 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Quizzes - MrEnglishEdu</title>
-  <link rel="stylesheet" href="/static/style.css" />
-</head>
-<body>
-  <h1>MrEnglishEdu - Quizzes</h1>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/courses">Courses</a>
-    <a href="/writing">Writing</a>
-    <a href="/grammar">Grammar</a>
-    <a href="/quizzes">Quizzes</a>
-  </nav>
-  <div class="container">
-    <h2>Test Your Knowledge</h2>
+{% extends "base.html" %}
+
+{% block title %}Quizzes - MrEnglishEdu{% endblock %}
+
+{% block content %}
+<section class="quizzes-section">
+  <div class="container main-content">
+    <div class="hero">
+      <h2>Quick Grammar Quiz</h2>
+      <p>Test your knowledge with simple multiple-choice questions.</p>
+    </div>
+
     <form>
-      <p>1. What is the past tense of "go"?</p>
-      <input type="radio" name="q1"> gone<br>
-      <input type="radio" name="q1"> went<br>
-      <input type="radio" name="q1"> going<br><br>
+      <div class="feature-box">
+        <label><strong>1. Choose the correct sentence:</strong></label><br>
+        <input type="radio" name="q1"> She go to school.<br>
+        <input type="radio" name="q1"> She goes to school.<br>
+        <input type="radio" name="q1"> She gone to school.<br>
+      </div>
 
-      <p>2. Choose the correct article: "I saw ___ elephant."</p>
-      <input type="radio" name="q2"> a<br>
-      <input type="radio" name="q2"> an<br>
-      <input type="radio" name="q2"> the<br><br>
+      <div class="feature-box">
+        <label><strong>2. Identify the noun:</strong></label><br>
+        <input type="radio" name="q2"> Run<br>
+        <input type="radio" name="q2"> Happiness<br>
+        <input type="radio" name="q2"> Quickly<br>
+      </div>
 
-      <button type="submit">Submit Quiz</button>
+      <button type="submit" class="btn-primary">Submit Answers</button>
     </form>
   </div>
-</body>
-</html>
+</section>
+{% endblock %}

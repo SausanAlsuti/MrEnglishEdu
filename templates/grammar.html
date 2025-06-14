@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Grammar - MrEnglishEdu</title>
-  <link rel="stylesheet" href="/static/style.css" />
-</head>
-<body>
-  <h1>MrEnglishEdu - Grammar</h1>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/courses">Courses</a>
-    <a href="/writing">Writing</a>
-    <a href="/grammar">Grammar</a>
-    <a href="/quizzes">Quizzes</a>
-  </nav>
-  <div class="container">
-    <h2>Grammar Lessons</h2>
-    <ul>
-      <li>Verb Tenses</li>
-      <li>Prepositions</li>
-      <li>Conditionals</li>
-      <li>Articles (a, an, the)</li>
-      <li>Subject-Verb Agreement</li>
-    </ul>
+{% extends "base.html" %}
+
+{% block title %}Grammar - MrEnglishEdu{% endblock %}
+
+{% block content %}
+<section class="grammar-section">
+  <div class="container main-content">
+    <div class="hero">
+      <h2>Master English Grammar</h2>
+      <p>Learn grammar rules and practice with examples and exercises.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>Tenses</h3>
+        <p>Understand present, past, and future tenses with usage examples.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Parts of Speech</h3>
+        <p>Identify nouns, verbs, adjectives, adverbs, and more.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Sentence Structure</h3>
+        <p>Practice forming grammatically correct and clear sentences.</p>
+      </div>
+    </div>
   </div>
-</body>
-</html>
+</section>
+{% endblock %}
